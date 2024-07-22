@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://crmtrhsjmf27d"]
+
+[ext_resource type="PackedScene" uid="uid://b0dsejmujlbeq" path="res://player/player.tscn" id="2_u6u6g"]
+[ext_resource type="PackedScene" uid="uid://ckcybt8ibpthw" path="res://enemies/pawn.tscn" id="3_isn1o"]
+[ext_resource type="PackedScene" uid="uid://bm8rpbe37f5e2" path="res://enemies/goblin_torch.tscn" id="3_ln3yg"]
+[ext_resource type="PackedScene" uid="uid://6ouu7wqgb7yf" path="res://enemies/goblin_dinamite.tscn" id="4_nykqr"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_u6u6g")]
+position = Vector2(576, 324)
+
+[node name="Pawn" parent="." instance=ExtResource("3_isn1o")]
+position = Vector2(1085, 595)
+
+[node name="GoblinTorch" parent="." instance=ExtResource("3_ln3yg")]
+position = Vector2(1037, 634)
+
+[node name="GoblinDinamite" parent="." instance=ExtResource("4_nykqr")]
+position = Vector2(1189, 705)
